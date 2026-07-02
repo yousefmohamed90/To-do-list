@@ -1,6 +1,5 @@
 import { useRef, useState } from 'react'
 import './App.css'
-
 function App() {
   const [tasks,setTasks]=useState([]);
   const inputref=useRef();
@@ -10,7 +9,6 @@ function App() {
     setTasks([...tasks,newItem]);
     inputref.current.value="";
   }
-
 const handleItemdone=(index)=>{
  const newtasks=[...tasks];
  newtasks[index].completed=!newtasks[index].completed;
@@ -26,8 +24,6 @@ setTasks(newtasks);
   <div className="App">
 <h2>To Do List</h2>
 <div className="container">
-
-
 <input  type="text" placeholder ="Add a new task" ref={inputref} />
 <button onClick={addTask}>Add</button>
 <ul>
@@ -43,5 +39,4 @@ return <div className="flex-container">
   </>
   )
 }
-
 export default App
