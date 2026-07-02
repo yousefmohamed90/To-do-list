@@ -1,0 +1,89 @@
+.App {
+  border: 5px solid #00b4d8;
+  margin: 50px 30px;
+  padding: 20px 10px;
+  border-radius: 12px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container ul li {
+  width: 300px;
+  overflow-wrap: break-word;
+  list-style-type: "✅";
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration-color: black;
+  /* Keep your original task color */
+  color: rgb(15, 161, 149);
+  display: inline;
+}
+
+.container input,
+.container button {
+  width: 50%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.container input {
+  border: 2px solid #00b4d8;
+  outline: none;
+  background-color: white;
+}
+
+.container input:focus {
+  border-color: #0077b6;
+  box-shadow: 0 0 10px rgba(0, 180, 216, 0.35);
+}
+
+.container button {
+  border: none;
+  background: linear-gradient(135deg, #00b4d8, #0077b6);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.container button:hover {
+  background: linear-gradient(135deg, #0096c7, #023e8a);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 119, 182, 0.35);
+}
+
+.container button:active {
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.flex-container{
+display:flex;
+justify-content: space-around;
+ width: 700px;
+}
+.delete {
+  color: rgb(0, 102, 255);
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+}
+
+.delete:hover {
+  color: white;
+  background: #ff4d4d;
+  padding: 5px 10px;
+  border-radius: 6px;
+  transform: scale(1.05);
+}
