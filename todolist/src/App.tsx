@@ -22,7 +22,7 @@ setTasks(newtasks);
  return(
   <>
   <div className="App">
-<h2>To Do List</h2>
+<h2 className='h2befdiv'>To Do List</h2>
 <div className="container">
 <input  type="text" placeholder ="Add a new task" ref={inputref} />
 <button onClick={addTask}>Add</button>
